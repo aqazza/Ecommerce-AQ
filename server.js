@@ -13,6 +13,6 @@ app.use(routes);
 
 // turn on connection to db and server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log("Now listening"));
+  app.listen(PORT, () => console.log(`http://localhost:${PORT}/`));
 });
 // imported from a solved activity to ensure its correct
